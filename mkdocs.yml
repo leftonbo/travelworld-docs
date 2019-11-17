@@ -1,0 +1,80 @@
+# Project information
+site_name: 'TravelWorld'
+site_description: 'LefTonboの創作世界【TrabelWorld】の設定をまとめるサイト。'
+site_author: 'LefTonbo'
+site_url: 'http://yourSite'
+
+# Copyright
+copyright: 'Copyright &copy; 2019 LefTonbo'
+
+# Documentation
+docs_dir: 'docs'
+
+# Theme
+theme:
+  name: 'material'
+  custom_dir: 'theme'
+  language: 'ja'
+  search:
+    language: 'ja'
+  # logo: 'images/'
+  # favicon: 'assets/images/favicon.ico'
+  palette:
+    primary: 'Light Green'
+    accent: 'Deep Orange'
+  font:
+    text: 'Kosugi Maru'
+    code: 'Roboto Mono'
+  feature:
+    tabs: true
+
+# Extra Customization
+extra:
+  manifest: 'manifest.webmanifest'
+  social:
+    - type: 'github'
+      link: 'https://github.com/leftonbo'
+    - type: 'twitter'
+      link: 'https://twitter.com/LefTonbo'
+
+# Extensions
+markdown_extensions:
+  - admonition
+  - codehilite:
+      linenums: true
+  - footnotes
+  - fontawesome_markdown
+  - meta
+  - pymdownx.betterem
+  - pymdownx.caret
+  - pymdownx.critic
+  # - pymdownx.emoji:
+  #     emoji_generator: !!python/name:pymdownx.emoji.to_svg
+  - pymdownx.smartsymbols
+  - pymdownx.tilde
+  - toc:
+      permalink: true
+
+# Additional CSS
+extra_css:
+  - 'https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css'
+  - 'stylesheets/extra.css'
+
+# Page tree
+nav:
+  - ホーム: index.md
+  - サイトについて: about.md
+  - 世界観:
+    - TravelWorld とは: databook/intro.md
+    - 世界の構造: databook/world.md
+    - 地方と文明: databook/region-and-culrure.md
+    - 暦: databook/calendar.md
+    - 生態系: databook/ecosystem.md
+    - 種族: databook/species.md
+    - 旅人: databook/traveler.md
+    - 旅の持ち物: databook/travelers-item.md
+    - 魔法: databook/magics.md
+    - グループ: databook/groups.md
+    - 材質と素材: databook/material-resources.md
+  - キャラクター:
+    - キャラクター一覧: characters/intro.md
