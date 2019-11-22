@@ -5,3 +5,5 @@ LefTonbo が作成したオリジナル創作世界【TravelWorld】をまとめ
 ## コンテンツ
 
 - **[世界観](databook/intro.md)**: TravelWorld 世界のこと
+- **[キャラクター](character/intro.md)**: キャラクター設定のまとめ
+- **[TRPG](trpg/intro.md)**: TRPG として遊ぶためのルールブック
