@@ -42,6 +42,7 @@ markdown_extensions:
   - admonition
   - codehilite:
       linenums: true
+  - def_list
   - footnotes
   - fontawesome_markdown
   - meta
@@ -80,3 +81,6 @@ nav:
     - キャラクター一覧: characters/intro.md
   - TRPG:
     - ルール表紙: trpg/intro.md
+    - ルールブックの読み方: trpg/how-to-read.md
+    - キャラクター作成: trpg/make-your-character.md
+    - 行為判定: trpg/action-check-rule.md
