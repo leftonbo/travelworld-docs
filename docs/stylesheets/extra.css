@@ -29,3 +29,11 @@ body {
     margin-right: 6px;
     display: inline;
 }
+
+.text-large {
+    font-size: 125%;
+}
+
+.md-typeset .admonition {
+    font-size: .72rem;
+}
