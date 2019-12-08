@@ -1,0 +1,1002 @@
+
+
+
+
+<!doctype html>
+<html lang="ja" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+        <meta name="description" content="LefTonboの創作世界【TravelWorld】の設定をまとめるサイト。">
+      
+      
+        <link rel="canonical" href="http://yourSite/trpg/action-check-rule/">
+      
+      
+        <meta name="author" content="LefTonbo">
+      
+      
+        <meta name="lang:clipboard.copy" content="クリップボードへコピー">
+      
+        <meta name="lang:clipboard.copied" content="コピーしました">
+      
+        <meta name="lang:search.language" content="ja">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="何も見つかりませんでした">
+      
+        <meta name="lang:search.result.one" content="1件見つかりました">
+      
+        <meta name="lang:search.result.other" content="#件見つかりました">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-　、。，．]+">
+      
+      <link rel="shortcut icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.4.3">
+    
+    
+      
+        <title>行為判定 - TravelWorld</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/application.30686662.css">
+      
+        <link rel="stylesheet" href="../../assets/stylesheets/application-palette.a8b3c06d.css">
+      
+      
+        
+        
+        <meta name="theme-color" content="#7cb342">
+      
+    
+    
+      <script src="../../assets/javascripts/modernizr.74668098.js"></script>
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kosugi+Maru:300,400,400i,700|Roboto+Mono&display=fallback">
+        <style>body,input{font-family:"Kosugi Maru","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+    
+    <link rel="stylesheet" href="../../assets/fonts/material-icons.css">
+    
+      <link rel="manifest" href="../../manifest.webmanifest">
+    
+    
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+    
+      
+    
+    
+  </head>
+  
+    
+    
+    <body dir="ltr" data-md-color-primary="light-green" data-md-color-accent="deep-orange">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448" viewBox="0 0 416 448" id="__github"><path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19T128 352t-18.125-8.5-10.75-19T96 304t3.125-20.5 10.75-19T128 256t18.125 8.5 10.75 19T160 304zm160 0q0 10-3.125 20.5t-10.75 19T288 352t-18.125-8.5-10.75-19T256 304t3.125-20.5 10.75-19T288 256t18.125 8.5 10.75 19T320 304zm40 0q0-30-17.25-51T296 232q-10.25 0-48.75 5.25Q229.5 240 208 240t-39.25-2.75Q130.75 232 120 232q-29.5 0-46.75 21T56 304q0 22 8 38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0 37.25-1.75t35-7.375 30.5-15 20.25-25.75T360 304zm56-44q0 51.75-15.25 82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5T212 416q-19.5 0-35.5-.75t-36.875-3.125-38.125-7.5-34.25-12.875T37 371.5t-21.5-28.75Q0 312 0 260q0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25 30.875Q171.5 96 212 96q37 0 70 8 26.25-20.5 46.75-30.25T376 64q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34 99.5z"/></svg>
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+    
+      <a href="#_1" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href="http://yourSite" title="TravelWorld" class="md-header-nav__button md-logo">
+          
+            <i class="md-icon"></i>
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            <span class="md-header-nav__topic">
+              TravelWorld
+            </span>
+            <span class="md-header-nav__topic">
+              
+                行為判定
+              
+            </span>
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+          
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="検索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            検索キーワードを入力してください
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+        
+      </div>
+      
+        <div class="md-flex__cell md-flex__cell--shrink">
+          <div class="md-header-nav__source">
+            
+
+
+  
+
+<a href="https://github.com/leftonbo/travelworld-docs/" title="リポジトリへ" class="md-source" data-md-source="github">
+  
+    <div class="md-source__icon">
+      <svg viewBox="0 0 24 24" width="24" height="24">
+        <use xlink:href="#__github" width="24" height="24"></use>
+      </svg>
+    </div>
+  
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+          </div>
+        </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+        
+
+  
+
+<nav class="md-tabs md-tabs--active" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  <li class="md-tabs__item">
+    
+      <a href="../.." class="md-tabs__link">
+        ホーム
+      </a>
+    
+  </li>
+
+      
+        
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../databook/intro/" class="md-tabs__link">
+          世界観
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../characters/intro/" class="md-tabs__link">
+          キャラクター
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../intro/" class="md-tabs__link md-tabs__link--active">
+          TRPG
+        </a>
+      
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+      
+      <main class="md-main" role="main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    <a href="http://yourSite" title="TravelWorld" class="md-nav__button md-logo">
+      
+        <i class="md-icon"></i>
+      
+    </a>
+    TravelWorld
+  </label>
+  
+    <div class="md-nav__source">
+      
+
+
+  
+
+<a href="https://github.com/leftonbo/travelworld-docs/" title="リポジトリへ" class="md-source" data-md-source="github">
+  
+    <div class="md-source__icon">
+      <svg viewBox="0 0 24 24" width="24" height="24">
+        <use xlink:href="#__github" width="24" height="24"></use>
+      </svg>
+    </div>
+  
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../.." title="ホーム" class="md-nav__link">
+      ホーム
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../about/" title="サイトについて" class="md-nav__link">
+      サイトについて
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
+    
+    <label class="md-nav__link" for="nav-3">
+      世界観
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        世界観
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../databook/intro/" title="TravelWorld とは" class="md-nav__link">
+      TravelWorld とは
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../databook/world/" title="世界の構造" class="md-nav__link">
+      世界の構造
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../databook/region-and-culrure/" title="地方と文明" class="md-nav__link">
+      地方と文明
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../databook/calendar/" title="暦" class="md-nav__link">
+      暦
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../databook/ecosystem/" title="生態系" class="md-nav__link">
+      生態系
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../databook/species/" title="種族" class="md-nav__link">
+      種族
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../databook/traveler/" title="旅人" class="md-nav__link">
+      旅人
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../databook/travelers-item/" title="旅の持ち物" class="md-nav__link">
+      旅の持ち物
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../databook/magics/" title="魔法" class="md-nav__link">
+      魔法
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../databook/groups/" title="グループ" class="md-nav__link">
+      グループ
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../databook/material-resources/" title="材質と素材" class="md-nav__link">
+      材質と素材
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4">
+    
+    <label class="md-nav__link" for="nav-4">
+      キャラクター
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-4">
+        キャラクター
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../characters/intro/" title="キャラクター一覧" class="md-nav__link">
+      キャラクター一覧
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5" checked>
+    
+    <label class="md-nav__link" for="nav-5">
+      TRPG
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-5">
+        TRPG
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../intro/" title="ルール表紙" class="md-nav__link">
+      ルール表紙
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../how-to-read/" title="ルールブックの読み方" class="md-nav__link">
+      ルールブックの読み方
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../make-your-character/" title="キャラクター作成" class="md-nav__link">
+      キャラクター作成
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../abilities/" title="技能" class="md-nav__link">
+      技能
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        行為判定
+      </label>
+    
+    <a href="./" title="行為判定" class="md-nav__link md-nav__link--active">
+      行為判定
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">目次</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    行為判定の基本
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    達成値
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    判定の補正値
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    目標値判定
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    クリティカルとファンブル
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    対抗判定
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    一般的な能力判定
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../battle-rule/" title="戦闘ルール" class="md-nav__link">
+      戦闘ルール
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">目次</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    行為判定の基本
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    達成値
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    判定の補正値
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    目標値判定
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    クリティカルとファンブル
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    対抗判定
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    一般的な能力判定
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                  <a href="https://github.com/leftonbo/travelworld-docs/edit/master/docs/trpg/action-check-rule.md" title="編集" class="md-icon md-content__icon">&#xE3C9;</a>
+                
+                
+                <h1 id="_1">行為判定<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
+<p>キャラクターが何らかの行動をし、その行動が上手くいったがどうか判定しなければならない場合があります。このときに行うものが<strong>【行為判定】</strong>です。</p>
+<h2 id="_2">行為判定の基本<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<p><strong>【行為判定】</strong>では、<strong>2つの能力値</strong>と<strong>6面ダイス2つ</strong>を用いて行動の成果を決定します。ダイスを振った後、出目の合計と能力値を全て合計したものが行動の<strong>【達成値】</strong>となります。</p>
+<p><strong>【達成値】 = 【能力値1】 + 【能力値2】 + 2D6</strong></p>
+<p>この2つの能力値とダイスを用いて達成値を出す事を <strong>《能力値1+能力値2》</strong> と表記します。2つの能力値は、同じものを用いる場合もあります。</p>
+<h3 id="_3">達成値<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h3>
+<p><strong>【達成値】</strong>は、行動がどれほど良い結果を出したかという結果を表す値です。達成値は<strong>【ダイスを振った結果】</strong>と<strong>【補正値】</strong>の合計によって決定されます。</p>
+<div class="admonition info">
+<p class="admonition-title">ダイスの表記</p>
+<p>6面ダイスを2つ振る判定を行う事を<strong>【2D6】</strong>、1つだけ振る場合を<strong>【1D6】</strong>と表記します。</p>
+<p>また、計算式に <strong>+2D6</strong> と表記されていた場合、<strong>そのダイスの結果を加算する</strong>ことを意味します。</p>
+</div>
+<div class="admonition info">
+<p class="admonition-title">達成値の例</p>
+<p><strong>2D6</strong>の判定を<strong>補正値+2</strong>で行い、ダイスの出目が1と6だった場合…</p>
+<p><span class="text-large"><strong>【達成値】</strong> = (1 + 6) + 2 = <strong>9</strong></span></p>
+</div>
+<h3 id="_4">判定の補正値<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h3>
+<p>行為判定はキャラクターの状態や特別な行動によって、<strong>【補正値】</strong>として達成値を変動させる場合があります。補正値はプラスにもマイナスにもなります。</p>
+<h2 id="_5">目標値判定<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h2>
+<p>殆どの行為判定では、行動が成功するか失敗するか決定するための<strong>【目標値】</strong>が設定され、【目標値判定】として区別されます。目標値は行動を成功するための難易度を表す数値であり、通常はGMから言い渡されます。</p>
+<p>もし<strong>達成値≧目標値</strong>ならば行動は成功、<strong>達成値＜目標値</strong>ならば行動は失敗するか、不完全なものになります。</p>
+<div class="admonition warning">
+<p class="admonition-title">達成値＝目標値のときは成功</p>
+<p>判定結果が<strong>達成値＝目標値</strong> のときは<strong>成功</strong>です。お間違えなく！</p>
+</div>
+<h2 id="_6">クリティカルとファンブル<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h2>
+<p>目標値判定で特定のダイス目を出した場合、<strong>【クリティカル】</strong>または<strong>【ファンブル】</strong>が発生する場合があります。</p>
+<p>もし判定のダイスの目が<strong>6ゾロ</strong>であるならば<strong>【クリティカル】</strong>となり、目標値に関係なく自動成功になります。クリティカルが発生した場合、通常の成功より大きな結果を得られるでしょう。</p>
+<p>一方で、判定のダイスの目が<strong>1ゾロ</strong>であるならば<strong>【ファンブル】</strong>となり、目標値に関係なく自動失敗になります。ファンブルが発生した場合、思いつく限りの不幸な失敗を受けることになるでしょう。</p>
+<div class="admonition info">
+<p class="admonition-title">PCがファンブルした場合</p>
+<p>PCがファンブルの結果を出した場合、そのPCは直ちに<strong>スペシャルポイントを1点獲得</strong>します。</p>
+</div>
+<h2 id="_7">対抗判定<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h2>
+<p><strong>【対抗判定】</strong>は、あるアクションに対して相手が対抗しようとした時に用いる判定です。
+対抗判定では、アクションを行う<strong>【能動側】</strong>とそれに対抗する<strong>【受動側】</strong>で互いに<strong>【行為判定】</strong>を行い、【達成値が大きい方が勝利】となります。</p>
+<div class="admonition info">
+<p class="admonition-title">対抗判定の達成値が同じになった場合</p>
+<p>基本的に<strong>PC側の勝利、NPC側の敗北</strong>として処理します。</p>
+<p>もしPC同士やNPC同士の対抗判定である場合、必要ならば<strong>2D6のみで対抗判定</strong>を決着がつくまで行ってください。</p>
+</div>
+<div class="admonition info">
+<p class="admonition-title">対抗判定のクリティカルとファンブル</p>
+<p>判定においてクリティカルを出した場合は出した側の自動勝利、ファンブルを出した場合は出した側の自動敗北となります。</p>
+<p>両者ともクリティカルもしくはファンブルになった場合は『対抗判定の達成値が同じになった場合』の処理に従ってください。</p>
+</div>
+<div class="admonition info">
+<p class="admonition-title">NPCにクリティカルを出された場合</p>
+<p>PC対NPCの対抗判定において、NPC側がクリティカルの結果を出してPC側の自動敗北となった場合、そのPCは直ちに<strong>スペシャルポイントを1点獲得</strong>します。</p>
+</div>
+<h2 id="_8">一般的な能力判定<a class="headerlink" href="#_8" title="Permanent link">&para;</a></h2>
+<p>能力値別の判定内容の目安は以下のようになります。日常的・普遍的な行動において能力値判定をする場合の目安としてお使い下さい。</p>
+<table>
+<thead>
+<tr>
+<th>判定の種類</th>
+<th>使用する能力値</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>筋力判定</td>
+<td><strong>《体力＋体力》</strong></td>
+</tr>
+<tr>
+<td>身体能力判定、近接攻撃判定</td>
+<td><strong>《体力＋機敏》</strong></td>
+</tr>
+<tr>
+<td>五感判定</td>
+<td><strong>《体力＋知性》</strong></td>
+</tr>
+<tr>
+<td>耐久判定、疲労耐性判定</td>
+<td><strong>《体力＋精神》</strong></td>
+</tr>
+<tr>
+<td>敏捷判定</td>
+<td><strong>《機敏＋機敏》</strong></td>
+</tr>
+<tr>
+<td>発見判定、射撃判定、回避判定</td>
+<td><strong>《機敏＋知性》</strong></td>
+</tr>
+<tr>
+<td>精密操作判定</td>
+<td><strong>《機敏＋精神》</strong></td>
+</tr>
+<tr>
+<td>知識判定</td>
+<td><strong>《知性＋知性》</strong></td>
+</tr>
+<tr>
+<td>交渉判定、魔法行使判定、危機感知判定</td>
+<td><strong>《知性＋精神》</strong></td>
+</tr>
+<tr>
+<td>恐怖耐性判定</td>
+<td><strong>《精神＋精神》</strong></td>
+</tr>
+</tbody>
+</table>
+                
+                  
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../abilities/" title="技能" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  前
+                </span>
+                技能
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../battle-rule/" title="戦闘ルール" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  次
+                </span>
+                戦闘ルール
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        <div>
+          TravelWorld はフィクションです。現実世界との関連は一切ありません。
+        </div>
+        <div>
+          
+            <span class="md-footer-copyright__highlight">
+              Copyright &copy; 2019 LefTonbo
+            </span>
+          
+          |
+          This site is powered by
+          <a href="https://www.mkdocs.org">MkDocs</a>
+          and
+          <a href="https://squidfunk.github.io/mkdocs-material/">Material for MkDocs</a>
+        </div>
+      </div>
+      
+  <div class="md-footer-social">
+    <link rel="stylesheet" href="../../assets/fonts/font-awesome.css">
+    
+      <a href="https://github.com/leftonbo" class="md-footer-social__link fa fa-github"></a>
+    
+      <a href="https://twitter.com/LefTonbo" class="md-footer-social__link fa fa-twitter"></a>
+    
+  </div>
+
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../../assets/javascripts/application.ac79c3b0.js"></script>
+      
+        
+        
+          
+          <script src="../../assets/javascripts/lunr/lunr.stemmer.support.js"></script>
+          
+            
+              
+                <script src="../../assets/javascripts/lunr/tinyseg.js"></script>
+              
+              
+                <script src="../../assets/javascripts/lunr/lunr.ja.js"></script>
+              
+            
+          
+          
+        
+      
+      <script>app.initialize({version:"1.0.4",url:{base:"../.."}})</script>
+      
+    
+  </body>
+</html>

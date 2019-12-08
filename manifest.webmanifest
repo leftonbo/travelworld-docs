@@ -1,0 +1,8 @@
+{
+    "name": "TravelWorld Databook",
+    "short_name": "TravelWorld",
+    "lang": "ja",
+    "start_url": "/",
+    "display": "standalone",
+    "theme_color": "#c7d68b"
+}
