@@ -5,7 +5,7 @@ site_author: 'LefTonbo'
 site_url: 'https://leftonbo.github.io/travelworld-docs/'
 
 # Repository Settings
-repo_url: https://github.com/leftonbo/travelworld-docs
+repo_url: 'https://github.com/leftonbo/travelworld-docs'
 
 # Copyright
 copyright: 'Copyright &copy; 2019 LefTonbo'
