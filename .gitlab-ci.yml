@@ -1,0 +1,40 @@
+variables:
+  DOC_IMAGE_TAG: registry.gitlab.com/leftonbo/left-docker-mkdocs
+
+stages:
+  - docker
+  - build
+  - release
+
+document:
+  stage: docker
+  image: docker:latest
+  services:
+    - docker:dind
+  before_script:
+    - docker login -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD $CI_REGISTRY
+  script:
+    - docker pull $DOC_IMAGE_TAG || true
+
+document:build:
+  stage: build
+  image: $DOC_IMAGE_TAG
+  before_script: []
+  script:
+    - mkdocs build
+  artifacts:
+    paths:
+      - site/
+    expire_in: 10 min
+
+pages:
+  stage: release
+  script:
+    - mv site public
+  artifacts:
+    paths:
+      - public/
+  dependencies:
+    - document:build
+  only:
+    - master
