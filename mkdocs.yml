@@ -25,6 +25,8 @@ theme:
     language: 'ja'
   # logo: 'images/'
   # favicon: 'assets/images/favicon.ico'
+  icon:
+    repo: fontawesome/brands/gitlab
   palette:
     primary: 'Light Green'
     accent: 'Deep Orange'
