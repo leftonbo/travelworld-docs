@@ -2,10 +2,13 @@
 site_name: 'TravelWorld'
 site_description: 'LefTonboの創作世界【TravelWorld】の設定をまとめるサイト。'
 site_author: 'LefTonbo'
-site_url: 'https://leftonbo.github.io/travelworld-docs/'
+site_url: 'https://leftonbo.gitlab.io/creationworld-travel/'
 
 # Repository Settings
-repo_url: 'https://github.com/leftonbo/travelworld-docs'
+repo_url: 'https://gitlab.com/leftonbo/creationworld-travel'
+
+# hide edit
+edit_uri: ""
 
 # Copyright
 copyright: 'Copyright &copy; 2019 LefTonbo'
@@ -26,19 +29,29 @@ theme:
     primary: 'Light Green'
     accent: 'Deep Orange'
   font:
-    text: 'Kosugi Maru'
+    text: 'Noto Sans JP'
     code: 'Roboto Mono'
-  feature:
-    tabs: true
+  features:
+    - tabs
 
 # Extra Customization
 extra:
   manifest: 'manifest.webmanifest'
   social:
+    - type: 'gitlab'
+      link: 'https://gitlab.com/leftonbo'
+      icon: fontawesome/brands/gitlab
     - type: 'github'
       link: 'https://github.com/leftonbo'
+      icon: fontawesome/brands/github
     - type: 'twitter'
       link: 'https://twitter.com/LefTonbo'
+      icon: fontawesome/brands/twitter
+
+# Plugins
+# plugins:
+#  - git-revision-date-localized:
+#      type: datetime
 
 # Extensions
 markdown_extensions:
@@ -67,29 +80,29 @@ extra_css:
 
 # Page tree
 nav:
-  - ホーム: index.md
-  - サイトについて: about.md
-  - 世界観:
-    - TravelWorld とは: databook/intro.md
-    - 世界の構造: databook/world.md
-    - 地方と文明: databook/region-and-culrure.md
-    - 暦: databook/calendar.md
-    - 生態系: databook/ecosystem.md
-    - 種族: databook/species.md
-    - 旅人: databook/traveler.md
-    - 旅の持ち物: databook/travelers-item.md
-    - 魔法: databook/magics.md
-    - グループ: databook/groups.md
-    - 材質と素材: databook/material-resources.md
-  - キャラクター:
-    - キャラクター一覧: characters/intro.md
-    - インナスサハギンズ:
-      - レグロ: characters/personal/regro.md
-      - ショール: characters/personal/shole.md
-  - TRPG:
-    - ルール表紙: trpg/intro.md
-    - ルールブックの読み方: trpg/how-to-read.md
-    - キャラクター作成: trpg/make-your-character.md
-    - 技能: trpg/abilities.md
-    - 行為判定: trpg/action-check-rule.md
-    - 戦闘ルール: trpg/battle-rule.md
+  - 'ホーム': 'index.md'
+  - 'サイトについて': 'about.md'
+  - '世界観':
+    - 'TravelWorld とは': 'databook/intro.md'
+    - '世界の構造': 'databook/world.md'
+    - '地方と文明': 'databook/region-and-culrure.md'
+    - '暦': 'databook/calendar.md'
+    - '生態系': 'databook/ecosystem.md'
+    - '種族': 'databook/species.md'
+    - '旅人': 'databook/traveler.md'
+    - '旅の持ち物': 'databook/travelers-item.md'
+    - '魔法': 'databook/magics.md'
+    - 'グループ': 'databook/groups.md'
+    - '材質と素材': 'databook/material-resources.md'
+  - 'キャラクター':
+    - 'キャラクター一覧': 'characters/intro.md'
+    - 'インナスサハギンズ':
+      - 'レグロ': 'characters/personal/regro.md'
+      - 'ショール': 'characters/personal/shole.md'
+  - 'TRPG':
+    - 'ルール表紙': 'trpg/intro.md'
+    - 'ルールブックの読み方': 'trpg/how-to-read.md'
+    - 'キャラクター作成': 'trpg/make-your-character.md'
+    - '技能': 'trpg/abilities.md'
+    - '行為判定': 'trpg/action-check-rule.md'
+    - '戦闘ルール': 'trpg/battle-rule.md'
