@@ -73,10 +73,14 @@ markdown_extensions:
   - toc:
       permalink: true
 
+# Additional JS
+extra_javascript:
+  - 'general/scripts/extra.js'
+
 # Additional CSS
 extra_css:
   - 'https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css'
-  - 'stylesheets/extra.css'
+  - 'general/stylesheets/extra.css'
 
 # Page tree
 nav:
